@@ -7,18 +7,16 @@ namespace TDD.Currency
 {
     public class Dollar
     {
-        private int v;
-
-        public Dollar(int v)
-        {
-            this.v = v;
-        }
-
         public int Amount { get; set; }
 
-        public void Times(int v)
+        public Dollar(int amount)
         {
-            throw new NotImplementedException();
+            Amount = amount;
+        }
+        
+        public void Times(int multipler)
+        {
+            Amount *= multipler;
         }
     }
 }
