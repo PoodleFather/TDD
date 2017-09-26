@@ -1,17 +1,21 @@
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TDD.Currency;
 
-namespace TDDTest
+namespace TDD.test
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMultiplication()
+        public void TestMulitiplication()
         {
+            //Arrange
             Dollar five = new Dollar(5);
+            //Act
             five.Times(2);
-            Assert.AreEqual(10, five.Amount);
+            //Assert
+            Assert.AreEqual(10,five.Amount);
         }
     }
 }
