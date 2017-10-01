@@ -16,8 +16,7 @@ namespace TDD.Currency
         
         public Dollar Times(int multipler)
         {
-            Amount *= multipler;
-            return null;
+            return new Dollar(Amount * multipler);
         }
     }
 }
