@@ -25,10 +25,6 @@ namespace TDD.test
         [TestMethod]
         public void TestEquality()
         {
-            //Arrange
-
-            //Act
-
             //Assert
             Assert.IsTrue(new Dollar(5).Equals(new Dollar(5)));
             Assert.IsFalse(new Dollar(5).Equals(new Dollar(6)));

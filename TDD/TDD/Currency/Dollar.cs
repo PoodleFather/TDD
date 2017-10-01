@@ -18,5 +18,10 @@ namespace TDD.Currency
         {
             return new Dollar(Amount * multipler);
         }
+        public new bool Equals(object obj)
+        {
+            Dollar dollar = (Dollar)obj;
+            return Amount == dollar.Amount;
+        }
     }
 }
