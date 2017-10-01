@@ -7,7 +7,7 @@ namespace TDD.Currency
 {
     public class Dollar
     {
-        public int Amount { get; set; }
+        private int Amount { get; set; }
 
         public Dollar(int amount)
         {
@@ -18,7 +18,7 @@ namespace TDD.Currency
         {
             return new Dollar(Amount * multipler);
         }
-        public new bool Equals(object obj)
+        public override bool Equals(object obj)
         {
             Dollar dollar = (Dollar)obj;
             return Amount == dollar.Amount;

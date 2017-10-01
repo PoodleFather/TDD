@@ -12,15 +12,9 @@ namespace TDD.test
         {
             //Arrange
             Dollar five = new Dollar(5);
-            //Act
-            Dollar product = five.Times(2);
-            
             //Assert
-            Assert.AreEqual(10, product.Amount);
-            //Act
-            product = five.Times(3);
-            //Assert
-            Assert.AreEqual(15, product.Amount);
+            Assert.AreEqual(new Dollar(10), five.Times(2));
+            Assert.AreEqual(new Dollar(15), five.Times(3));
         }
         [TestMethod]
         public void TestEquality()
