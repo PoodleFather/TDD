@@ -13,12 +13,14 @@ namespace TDD.test
             //Arrange
             Dollar five = new Dollar(5);
             //Act
-            five.Times(2);
+            Dollar product = five.Times(2);
+            
             //Assert
-            Assert.AreEqual(10,five.Amount);
-
-            five.Times(3);
-            Assert.AreEqual(15, five.Amount);
+            Assert.AreEqual(10, product.Amount);
+            //Act
+            product = five.Times(3);
+            //Assert
+            Assert.AreEqual(15, product.Amount);
 
         }
     }
